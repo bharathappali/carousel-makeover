@@ -12,11 +12,15 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.css">
 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
+
+    <link href="css/pignose.calendar.css" rel="stylesheet">
 
     <!-- Template styles -->
     <style rel="stylesheet">
@@ -49,7 +53,7 @@
         .bar{
             position: absolute;
             bottom: 0;
-            width: 2px;
+            width: 4px;
         }
         #bars .bar:nth-child(1){
             background: #3369e8;
@@ -81,12 +85,34 @@
             height: 30px;
             left: 20px;
         }
-        .card {
-            background: #b6fbff;  /* fallback for old browsers */
-/*background: -webkit-linear-gradient(to right, #83a4d4, #b6fbff);  /* Chrome 10-25, Safari 5.1-6 */
-/*background: linear-gradient(to right, #83a4d4, #b6fbff);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */*/
+        .card-main {
+            background: #833ab4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+padding-top: 20px;
+padding-bottom: 20px;
 
 
+        }
+
+        .hoverable:hover {
+            background: rgba(255,255,255,0.5);
+        }
+
+        .port-pane{
+            display: none;
+        }
+
+        .buy-pane {
+            display:none;
+        }
+
+        .pignose-calendar .icon-arrow-left:before {
+          content: '<';
+        }
+        .pignose-calendar .icon-arrow-right:before {
+          content: '>';
         }
         
     </style>
@@ -106,53 +132,155 @@
             <div class="carousel-item active">
                 <!--Mask color-->
                 <div class="view hm-black-light">
-
+                    <!-- <div class="full-bg-img"><img src="https://www.planwallpaper.com/static/images/518164-backgrounds.jpg" style="max-width:100%;"></div> -->
                     <!--Video source-->
                     <video class="video-full" autoplay loop>
                         <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
                     </video>
-                    <div class="full-bg-img"></div>
+                    
                 </div>
                 <div class="carousel-caption">
                     <div class="col-sm-12 animated fadeIn" style="margin-top: 50px">
-                        <h1>saba</h1>
                         <div class="row">
-                        <div class="col-sm-3">&nbsp;</div>
-                        <div class="col-sm-6">
-                            <div class="card hoverable" style="border-radius: 0px;background: #7b4397;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-">
-                                <div style="display: flex">
-                                <div class="col-sm-6">
-                                    <h2 style="color: #000">airtel</h2>
-                                </div>
-                                <div class="col-sm-1">
-                                    <div id="bars">
-                                        <div class="bar"></div>
-                                        <div class="bar"></div>
-                                        <div class="bar"></div>
-                                        <div class="bar"></div>
-                                        <div class="bar"></div>
+                        <div class="col-sm-3"></div>
+                        <div class="card-main col-md-6" style="border-radius:0px">
+                            <h1 style="color: #ffffff">TikTik</h1>
+                            <div class="main-pane">
+                                <div class="hoverable" style="display: flex; padding: 2px 5px 2px 5px; margin-top: 5px;max-width: 100%;">
+                                    <div class="col-sm-5">
+                                        <img class="white" src="imgs/jio.png" style="width: 70px; height: 70px">
+                                    </div>
+                                    <!-- <div class="col-sm-1"> -->
+                                        <div id="bars">
+                                            <div class="bar"></div>
+                                            <div class="bar"></div>
+                                            <div class="bar"></div>
+                                            <div class="bar"></div>
+                                            <div class="bar"></div>
+                                        </div>
+                                    <!-- </div> -->
+                                    <div class="col-sm-2">
+                                        <div id="fooo" style="color: #ffffff"></div>
+                                       <canvas width="70" height="70" id="foo" style="margin-top: -35px"></canvas> 
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="col-sm-6">
+                                            <i class="port white-text fa fa-sign-out fa-2x" style="padding-top: 2px; color: #3369e8;cursor: pointer"></i>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <i class="buy-jio white-text fa fa-shopping-cart fa-2x" style="padding-top: 2px;cursor: pointer"></i>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div id="fooo" style="color: #000"></div>
-                                   <canvas width="70" height="70" id="foo" style="margin-top: -35px"></canvas> 
+
+
+                                <div class="hoverable" style="display: flex; padding: 2px 5px 2px 5px; margin-top: 5px">
+                                    <div class="col-sm-5">
+                                        <img class="white" src="imgs/airtel.png" style="width: 70px; height: 70px">
+                                    </div>
+                                    <!-- <div class="col-sm-1"> -->
+                                        <div id="bars">
+                                            <div class="bar"></div>
+                                            <div class="bar"></div>
+                                            <div class="bar"></div>
+                                            <div class="bar"></div>
+                                            <!-- <div class="bar"></div> -->
+                                        </div>
+                                    <!-- </div> -->
+                                    <div class="col-sm-2">
+                                        <div id="fooo1" style="color: #ffffff"></div>
+                                       <canvas width="70" height="70" id="foo1" style="margin-top: -35px"></canvas> 
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="col-sm-6">
+                                            <i class="port white-text fa fa-sign-out fa-2x" style="padding-top: 20px; color: #3369e8;cursor: pointer"></i>
+                                        </div>
+                                        <!-- <div class="col-sm-6">
+                                            <i class="white-text  fa fa-shopping-cart fa-2x" style="padding-top: 2px;cursor: pointer"></i>
+                                        </div> -->
+                                    </div>
                                 </div>
-                                <div class="col-sm-2">
-                                    <i class="green-text fa-2x fa-battery-quarter"></i>
+
+
+                                <div class="hoverable" style="display: flex; padding: 2px 0px 2px 0px; margin-top: 5px">
+                                    <div class="col-sm-5">
+                                        <img class="white" src="imgs/telenor.jpg" style="width: 70px; height: 70px">
+                                    </div>
+                                    <!-- <div class="col-sm-1"> -->
+                                        <div id="bars">
+                                            <div class="bar"></div>
+                                            <div class="bar"></div>
+                                            <div class="bar"></div>
+                                            <!-- <div class="bar"></div>
+                                            <div class="bar"></div> -->
+                                        </div>
+                                    <!-- </div> -->
+                                    <div class="col-sm-2">
+                                        <div id="fooo2" style="color: #ffffff"></div>
+                                       <canvas width="70" height="70" id="foo2" style="margin-top: -35px"></canvas> 
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="col-sm-6">
+                                            <i class="port white-text fa fa-sign-out fa-2x" style="padding-top: 20px; color: #3369e8;cursor: pointer"></i>
+                                        </div>
+                                        <!-- <div class="col-sm-6">
+                                            <i class="white-text  fa fa-shopping-cart fa-2x" style="padding-top: 2px;cursor: pointer"></i>
+                                        </div> -->
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="port-pane">
+                                <div class="col-sm-12">
+                                    <div class="card">
+                                        <div class="col-sm-12" style="padding: 20px 20px 20px 20px">
+                                            <div class="col-sm-3">
+                                                <i class="back-to-main-pane fa fa-arrow-left fa-2x black-text" style="cursor: pointer"></i>
+                                            </div>
+                                            <div class="col-sm-6" style="margin: 0 auto">
+                                                <i class="fa fa-send fa-5x blue-text"></i>
+                                                <p style="color:#000; font-size: medium"><br><br>Send the following text message <br><br> <strong>PORT</strong> followed by your 10-digit mobile number to TRAI's central number for mobile number portability - <strong>1900</strong>. <br>Example:<br> Send <strong>'PORT 98xxxxxx98'</strong> to <strong>1900</strong>. <br><br>You'll receive an SMS back with a Port out code</p>
+                                            </div>
+                                            <div class="col-sm-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="buy-pane">
+                                <div class="card white hoverable"  id="signup-div" style="padding: 20px 20px 20px 20px;">
+                                    <h3 style="color:#000;width:100%"><i style="float:left;cursor: pointer" class="back-to-main-pane fa fa-arrow-left black-text"></i>Order JIO Sim Card</h3>
+                                    <div class="md-form" style="text-align: left">
+                                        <i class="fa fa-user prefix fa-3x grey-text" style="margin-top: 7px"></i>
+                                        <input type="text" class="form-control" id="order_firstname" name="signup_email" required>
+                                        <label for="order_firstname">First Name</label>
+                                    </div>
+                                    <div class="md-form" style="text-align: left">
+                                        <i class="fa fa-user prefix fa-3x grey-text" style="margin-top: 7px"></i>
+                                        <input type="text" class="form-control" id="order_lastname" name="signup_password" required>
+                                        <label for="order_lastname">Last Name</label>
+                                    </div>
+                                    <div class="md-form" style="text-align: left">
+                                        <i class="fa fa-envelope prefix fa-3x grey-text" style="margin-top: 7px"></i>
+                                        <input type="email" class="form-control" id="order_email" name="signup_retype_password" required>
+                                        <label for="order_email">Email</label>
+                                    </div>
+                                    <div class="md-form text-center">
+                                        <button class="btn btn-primary btn-calendar"><i class="fa fa-calendar fa-1x"></i>&nbsp; Book a Slot</button>
+                                        <div class="box black-text"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
-                        <div class="col-sm-3">&nbsp;</div>
+                        <div class="col-sm-3"></div>
                     </div>
                     <!-- second row -->
-                    <div class="row">
-                        <div class="col-sm-3">&nbsp;</div>
+                    <!-- <div class="row">
+                        <div class="col-sm-3"></div>
                         <div class="col-sm-6">
-                            <div class="card hoverable" style="border-radius: 0px">
+                            <div class="" style="border-radius: 0px;background: rgba(0,0,0,0)">
                                 <div style="display: flex">
                                 <div class="col-sm-6">
                                     <h2 style="color: #000">Idea</h2>
@@ -176,8 +304,8 @@ background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, F
                             </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">&nbsp;</div>
-                    </div>
+                        <div class="col-sm-3"></div>
+                    </div> -->
                     </div>
                 </div>
 
@@ -249,6 +377,10 @@ background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, F
 
     <script type="text/javascript" src="js/guage.js"></script>
 
+    <script type="text/javascript" src="js/moment.js"></script>
+
+    <script type="text/javascript" src="js/pignose.calendar.js"></script>
+
     <script>
         $(function() {
             $(window).on( 'resize', function () {
@@ -258,6 +390,55 @@ background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, F
             $('.card').hover(function(){
                 $(this).css("z-index","20000px");
             });
+            $('.port').click(function(){
+                $('.buy-pane').hide();
+                $('.main-pane').hide();
+                $('.port-pane').show();
+            });
+            $('.back-to-main-pane').click(function(){
+                $('.buy-pane').hide();
+                $('.port-pane').hide();
+                $('.main-pane').show();
+            });
+            $('.buy-jio').click(function () {
+                $('.main-pane').hide();
+                $('.port-pane').hide();
+                $('.buy-pane').show();
+            });
+            $('.btn-calendar').pignoseCalendar({
+                apply: onApplyHandler,
+                modal: true, // It means modal will be showed when you click the target button.
+                buttons: true,
+        });
+         function onApplyHandler(date, context) {
+                /**
+                 * @date is an array which be included dates(clicked date at first index)
+                 * @context is an object which stored calendar interal data.
+                 * @context.calendar is a root element reference.
+                 * @context.calendar is a calendar element reference.
+                 * @context.storage.activeDates is all toggled data, If you use toggle type calendar.
+                 * @context.storage.events is all events associated to this date
+                 */
+                var $element = context.element;
+                var $calendar = context.calendar;
+                var $box = $element.siblings('.box').show();
+                var text = 'Scheduled Date : ';
+                if (date[0] !== null) {
+                    text += date[0].format('DD-MM-YYYY');
+                    // $('#task_creation_date').val(date[0].format('DD-MM-YYYY'));
+                }
+                // if (date[0] !== null && date[1] !== null) {
+                //     text += ' ~ ';
+                // }
+                // else if (date[0] === null && date[1] == null) {
+                //     text += 'nothing';
+                // }
+                // if (date[1] !== null) {
+                //     text += date[1].format('DD-MM-YYYY');
+                //     // $('#task_due_date').val(date[1].format('DD-MM-YYYY'));
+                // }
+                $box.text(text);
+            }
             var opts = {
             angle: 0, /// The span of the gauge arc
             lineWidth: 0.15, // The line thickness
@@ -276,8 +457,9 @@ background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, F
             [1.0, "#1A237E"]
             ],
             pointer: {
-            length: 0.3, // Relative to gauge radius
-            strokeWidth: 0.025 // The thickness
+            length: 0.4, // Relative to gauge radius
+            strokeWidth: 0.035, // The thickness
+            color: '#ffffff'
             },
 
             strokeColor: '#9FA8DA'   // to see which ones work best for you
@@ -285,15 +467,21 @@ background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, F
             var target = document.getElementById('foo'); // your canvas element
             var gauge = new Gauge(target).setOptions(opts);
             gauge.setTextField(document.getElementById("fooo"));  // create sexy gauge!
-            gauge.maxValue = 100; // set max gauge value
+            gauge.maxValue = 1000; // set max gauge value
             gauge.setMinValue(0);  // set min value
-            gauge.set(70); // set actual value
+            gauge.set(700); // set actual value
             var target1 = document.getElementById('foo1'); // your canvas element
             var gauge1 = new Gauge(target1).setOptions(opts);
             gauge1.setTextField(document.getElementById("fooo1"));  // create sexy gauge!
-            gauge1.maxValue = 100; // set max gauge value
+            gauge1.maxValue = 1000; // set max gauge value
             gauge1.setMinValue(0);  // set min value
-            gauge1.set(60); // set actual value
+            gauge1.set(500); // set actual value
+            var target1 = document.getElementById('foo2'); // your canvas element
+            var gauge1 = new Gauge(target1).setOptions(opts);
+            gauge1.setTextField(document.getElementById("fooo2"));  // create sexy gauge!
+            gauge1.maxValue = 1000; // set max gauge value
+            gauge1.setMinValue(0);  // set min value
+            gauge1.set(300); // set actual value
         });
     </script>
 
