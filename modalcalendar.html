@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>modal calendar</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <style>
+        .modal{
+            width: 100%;
+            min-width: 100%;
+        }
+        .modal-dialog {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .modal-content {
+            height: auto;
+            width: auto;
+            min-height: 100%;
+            min-width: 100%;
+            border-radius: 0;
+        }
+        @media (min-width: 576px){
+            .modal-dialog {
+                 max-width: 100%;
+                margin: 0px auto;
+            }
+        }
+        .row-heading{
+            text-align: center;
+        }
+        .ava-slot{
+            background: green;
+            color: green;
+            border: 5px solid #FFFFFF;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .slot {
+            background: #FFFFFF;
+            color: #FFFFFF;
+            border: 5px solid #FFFFFF;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Book Slots
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Available Slots</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <table class="table white" style="table-layout: fixed;text-align: center">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th class="row-heading"></th>
+                            <th class="row-heading"></th>
+                            <th class="row-heading"></th>
+                            <th class="row-heading"></th>
+                            <th class="row-heading"></th>
+                            <th class="row-heading"></th>
+                            <th class="row-heading"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="0900">
+                            <th scope="row">09:00</th>
+                        </tr>
+                        <tr class="1000">
+                            <th scope="row">10:00</th>
+                        </tr>
+                        <tr class="1100">
+                            <th scope="row">11:00</th>
+                        </tr>
+                        <tr class="1200">
+                            <th scope="row">12:00</th>
+                        </tr>
+                        <tr class="0100">
+                            <th scope="row">01:00</th>
+                        </tr>
+                        <tr class="0200">
+                            <th scope="row">02:00</th>
+                        </tr>
+                        <tr class="0300">
+                            <th scope="row">03:00</th>
+                        </tr>
+                        <tr class="0400">
+                            <th scope="row">04:00</th>
+                        </tr>
+                        <tr class="0500">
+                            <th scope="row">05:00</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap dropdown -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script>
+    function getfullday(i) {
+        switch(i) {
+            case 0:
+                return "Sunday";
+            case 1:
+                return "Monday";
+            case 2:
+                return "Tuesday";
+            case 3:
+                return "Wednesday";
+            case 4:
+                return "Thursday";
+            case 5:
+                return "Friday";
+            case 6:
+                return "Saturday";
+            default:
+                return "Not a Date";
+        }
+    }
+    $(function(){
+        $('.0900').append('<td class="slot"></td>');
+        $('.0900').append('<td class="slot"></td>');
+        $('.0900').append('<td class="slot"></td>');
+        $('.0900').append('<td class="ava-slot"></td>');
+        $('.0900').append('<td class="slot"></td>');
+        $('.0900').append('<td class="slot"></td>');
+        $('.0900').append('<td class="slot"></td>');
+        var date =  new Date();
+        var recurdate = date;
+
+        $('.row-heading').each(function (i, obj) {
+            var day = getfullday(recurdate.getDay());
+            $(obj).html(day+'<br>'+recurdate.getDate()+'-'+(recurdate.getMonth()+1)+'-'+recurdate.getFullYear());
+            recurdate = new Date(recurdate.setHours(recurdate.getHours()+24));
+        });
+       $('.ava-slot').click(function () {
+           alert($(this).parent().attr('class'));
+          // alert($(this).text());
+           // $('#exampleModal').modal('toggle');
+       });
+    });
+</script>
+</body>
+</html>
