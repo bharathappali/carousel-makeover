@@ -173,26 +173,32 @@
         }
     }
     $(function(){
-        $('.0900').append('<td class="slot"></td>');
-        $('.0900').append('<td class="slot"></td>');
-        $('.0900').append('<td class="slot"></td>');
-        $('.0900').append('<td class="ava-slot"></td>');
-        $('.0900').append('<td class="slot"></td>');
-        $('.0900').append('<td class="slot"></td>');
-        $('.0900').append('<td class="slot"></td>');
+
         var date =  new Date();
         var recurdate = date;
 
         $('.row-heading').each(function (i, obj) {
             var day = getfullday(recurdate.getDay());
-            $(obj).html(day+'<br>'+recurdate.getDate()+'-'+(recurdate.getMonth()+1)+'-'+recurdate.getFullYear());
+            var fulldate = recurdate.getDate()+'-'+(recurdate.getMonth()+1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+'-'+recurdate.getFullYear();
+            $(obj).html(day+'<br>'+fulldate);
+            $('.0900').append('<td class="'+fulldate+'T09 slot"></td>');
+            $('.1000').append('<td class="'+fulldate+'T10 slot"></td>');
+            $('.1100').append('<td class="'+fulldate+'T11 slot"></td>');
+            $('.1200').append('<td class="'+fulldate+'T12 slot"></td>');
+            $('.0100').append('<td class="'+fulldate+'T01 slot"></td>');
+            $('.0200').append('<td class="'+fulldate+'T02 slot"></td>');
+            $('.0300').append('<td class="'+fulldate+'T03 slot"></td>');
+            $('.0400').append('<td class="'+fulldate+'T04 slot"></td>');
+            $('.0500').append('<td class="'+fulldate+'T05 slot"></td>');
             recurdate = new Date(recurdate.setHours(recurdate.getHours()+24));
         });
-       $('.ava-slot').click(function () {
-           alert($(this).parent().attr('class'));
+        $(document.body).on('click', '.ava-slot' ,function(){
+           alert($(this).attr('class').split(" ")[0]+" "+$(this).parent().attr('class'));
           // alert($(this).text());
            // $('#exampleModal').modal('toggle');
        });
+       $('.25-01-2018T02').removeClass('slot');
+       $('.25-01-2018T02').addClass('ava-slot');
     });
 </script>
 </body>
