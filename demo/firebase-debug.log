@@ -1,0 +1,32 @@
+[debug] [2018-01-24T14:46:59.566Z] ----------------------------------------------------------------------
+[debug] [2018-01-24T14:46:59.569Z] Command:       /usr/local/Cellar/node/9.4.0/bin/node /usr/local/bin/firebase serve --project tiktikdebug
+[debug] [2018-01-24T14:46:59.570Z] CLI Version:   3.17.3
+[debug] [2018-01-24T14:46:59.570Z] Platform:      darwin
+[debug] [2018-01-24T14:46:59.570Z] Node Version:  v9.4.0
+[debug] [2018-01-24T14:46:59.574Z] Time:          Wed Jan 24 2018 20:16:59 GMT+0530 (IST)
+[debug] [2018-01-24T14:46:59.574Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-24T14:46:59.609Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-24T14:46:59.609Z] > authorizing via signed-in user
+[debug] [2018-01-24T14:46:59.612Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tiktikdebug  
+  
+ Wed Jan 24 2018 20:16:59 GMT+0530 (IST)
+[debug] [2018-01-24T14:47:02.289Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-24T14:47:02.291Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tiktikdebug/tokens  
+  
+ Wed Jan 24 2018 20:17:02 GMT+0530 (IST)
+[debug] [2018-01-24T14:47:03.965Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/appalibharath/Downloads/firebaseui-web/demo'...
+[info] 
+[debug] [2018-01-24T14:47:03.971Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tiktikdebug  
+  
+ Wed Jan 24 2018 20:17:03 GMT+0530 (IST)
+[debug] [2018-01-24T14:47:05.967Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-24T14:47:05.967Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/909421904170/clients/_:getWebAppConfig  
+  
+ Wed Jan 24 2018 20:17:05 GMT+0530 (IST)
+[debug] [2018-01-24T14:47:06.989Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
