@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="00b36970-9b56-48f4-88c2-5c01f9a06a03" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/License.pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MDB License.pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/calendar.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/font-awesome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_222222_256x240.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_454545_256x240.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_888888_256x240.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/images/ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/jquery-ui-1.8.11.custom.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/jquery.weekcalendar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/mdb.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/mdb.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/pignose.calendar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/fa/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/fa/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/fa/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/fa/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/fa/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/fa/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Bold.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Bold.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Bold.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Light.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Light.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Light.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Medium.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Medium.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Medium.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Medium.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Thin.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Thin.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Thin.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/font/roboto/Roboto-Thin.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/imgs/Docomo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/imgs/Reliance.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/imgs/Telenor.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/imgs/aircel.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/imgs/airtel.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/imgs/bsnl.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/imgs/idea.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/imgs/jio.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/imgs/vodafone.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/date.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/guage.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-1.4.4.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-2.2.3.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-2.2.3.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.1.1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.1.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.2.1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.2.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-ui-1.8.11.custom.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-ui-1.8.4.custom.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-ui-i18n.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.weekcalendar.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/mdb.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/mdb.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/moment.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/pignose.calendar.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/popper.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/tether.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/tether.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/modalcalendar.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test.json" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test.json" />
+        <option value="$PROJECT_DIR$/modalcalendar.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="20" />
+    <option name="y" value="43" />
+    <option name="width" value="1400" />
+    <option name="height" value="782" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="carousel-makeover" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carousel-makeover" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00b36970-9b56-48f4-88c2-5c01f9a06a03" name="Default" comment="" />
+      <created>1516795971449</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516795971449</updated>
+      <workItem from="1516795972892" duration="2380000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2380000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="20" y="43" width="1400" height="782" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="130" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="161" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modalcalendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="354" column="29" lean-forward="false" selection-start-line="354" selection-start-column="29" selection-end-line="354" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
