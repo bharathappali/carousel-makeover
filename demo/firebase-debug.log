@@ -1,0 +1,96 @@
+[debug] [2018-01-26T05:28:14.292Z] ----------------------------------------------------------------------
+[debug] [2018-01-26T05:28:14.295Z] Command:       /usr/local/Cellar/node/9.4.0/bin/node /usr/local/bin/firebase serve --project tiktikdebug
+[debug] [2018-01-26T05:28:14.295Z] CLI Version:   3.17.3
+[debug] [2018-01-26T05:28:14.295Z] Platform:      darwin
+[debug] [2018-01-26T05:28:14.295Z] Node Version:  v9.4.0
+[debug] [2018-01-26T05:28:14.296Z] Time:          Fri Jan 26 2018 10:58:14 GMT+0530 (IST)
+[debug] [2018-01-26T05:28:14.296Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-26T05:28:14.324Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-26T05:28:14.325Z] > authorizing via signed-in user
+[debug] [2018-01-26T05:28:14.327Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tiktikdebug  
+  
+ Fri Jan 26 2018 10:58:14 GMT+0530 (IST)
+[debug] [2018-01-26T05:28:16.256Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-26T05:28:16.257Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tiktikdebug/tokens  
+  
+ Fri Jan 26 2018 10:58:16 GMT+0530 (IST)
+[debug] [2018-01-26T05:28:18.388Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/appalibharath/Downloads/firebaseui-web/demo'...
+[info] 
+[debug] [2018-01-26T05:28:18.393Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tiktikdebug  
+  
+ Fri Jan 26 2018 10:58:18 GMT+0530 (IST)
+[debug] [2018-01-26T05:28:21.474Z] Error: socket hang up
+    at createHangUpError (_http_client.js:330:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at TLSSocket.emit (events.js:165:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+[error] 
+[error] Error: Server Error. socket hang up
+[debug] [2018-01-26T05:29:19.531Z] ----------------------------------------------------------------------
+[debug] [2018-01-26T05:29:19.535Z] Command:       /usr/local/Cellar/node/9.4.0/bin/node /usr/local/bin/firebase serve --project tiktikdebug
+[debug] [2018-01-26T05:29:19.535Z] CLI Version:   3.17.3
+[debug] [2018-01-26T05:29:19.535Z] Platform:      darwin
+[debug] [2018-01-26T05:29:19.535Z] Node Version:  v9.4.0
+[debug] [2018-01-26T05:29:19.536Z] Time:          Fri Jan 26 2018 10:59:19 GMT+0530 (IST)
+[debug] [2018-01-26T05:29:19.536Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-26T05:29:19.570Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-26T05:29:19.571Z] > authorizing via signed-in user
+[debug] [2018-01-26T05:29:19.573Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tiktikdebug  
+  
+ Fri Jan 26 2018 10:59:19 GMT+0530 (IST)
+[debug] [2018-01-26T05:29:21.694Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-26T05:29:21.695Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tiktikdebug/tokens  
+  
+ Fri Jan 26 2018 10:59:21 GMT+0530 (IST)
+[debug] [2018-01-26T05:29:23.438Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/appalibharath/Downloads/firebaseui-web/demo'...
+[info] 
+[debug] [2018-01-26T05:29:23.442Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tiktikdebug  
+  
+ Fri Jan 26 2018 10:59:23 GMT+0530 (IST)
+[debug] [2018-01-26T05:29:26.952Z] Error: socket hang up
+    at createHangUpError (_http_client.js:330:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at TLSSocket.emit (events.js:165:20)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+[error] 
+[error] Error: Server Error. socket hang up
+[debug] [2018-01-26T05:29:33.853Z] ----------------------------------------------------------------------
+[debug] [2018-01-26T05:29:33.857Z] Command:       /usr/local/Cellar/node/9.4.0/bin/node /usr/local/bin/firebase serve --project tiktikdebug
+[debug] [2018-01-26T05:29:33.858Z] CLI Version:   3.17.3
+[debug] [2018-01-26T05:29:33.858Z] Platform:      darwin
+[debug] [2018-01-26T05:29:33.858Z] Node Version:  v9.4.0
+[debug] [2018-01-26T05:29:33.858Z] Time:          Fri Jan 26 2018 10:59:33 GMT+0530 (IST)
+[debug] [2018-01-26T05:29:33.858Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-26T05:29:33.883Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-26T05:29:33.883Z] > authorizing via signed-in user
+[debug] [2018-01-26T05:29:33.885Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tiktikdebug  
+  
+ Fri Jan 26 2018 10:59:33 GMT+0530 (IST)
+[debug] [2018-01-26T05:29:35.839Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-26T05:29:35.840Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tiktikdebug/tokens  
+  
+ Fri Jan 26 2018 10:59:35 GMT+0530 (IST)
+[debug] [2018-01-26T05:29:37.760Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/appalibharath/Downloads/firebaseui-web/demo'...
+[info] 
+[debug] [2018-01-26T05:29:37.765Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tiktikdebug  
+  
+ Fri Jan 26 2018 10:59:37 GMT+0530 (IST)
+[debug] [2018-01-26T05:29:40.543Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-26T05:29:40.544Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/909421904170/clients/_:getWebAppConfig  
+  
+ Fri Jan 26 2018 10:59:40 GMT+0530 (IST)
+[debug] [2018-01-26T05:29:42.579Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

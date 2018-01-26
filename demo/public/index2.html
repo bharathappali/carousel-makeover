@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>FirebaseUI Auth Demo</title>
+    <link rel="manifest" href="manifest.json">
+    <!-- <script src="https://www.gstatic.com/firebasejs/live/4.9.5/firebase.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="config.js"></script>
+    <script src="common.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="dist/firebaseui.js"></script>
+    <!-- <link type="text/css" rel="stylesheet" href="dist/firebaseui.css" /> -->
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+            <div id="firebaseui-spa">
+              <div id="firebaseui-container"></div>
+            </div>
+
+    <script src="app.js"></script>
+  <script>
+    $(function () {
+        // $('.firebaseui-flag').removeClass('firebaseui-flag-US');
+        // $('.firebaseui-flag').addClass('firebaseui-flag-IN');
+        // $('.firebaseui-id-country-selector-code').html("+91");
+        $('.firebaseui-country-selector').hide();
+        $('.firebaseui-id-phone-number').val("+91");
+        // $('.firebaseui-id-phone-number').on('keyup',function (e) {
+        //     // alert($('.firebaseui-id-phone-number').val().length);
+        //     if(e.which === 8){
+        //         if($('.firebaseui-id-phone-number').val().length < 3){
+        //             return false;
+        //         }
+        //         return true;
+        //     }
+        //     return true;
+        // });
+    });
+  </script>
+  </body>
+</html>
