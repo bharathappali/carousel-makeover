@@ -187,6 +187,10 @@ padding-bottom: 20px;
             -ms-user-select: none;
             user-select: none;
         }
+
+        .timelabel{
+            padding-top: -15px;
+        }
         
     </style>
 
@@ -194,7 +198,46 @@ padding-bottom: 20px;
 
 <body>
 
+<!--<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" style="background: #E83F11">-->
 
+    <!--&lt;!&ndash; Navbar brand &ndash;&gt;-->
+    <!--<a class="navbar-brand white-text" href="#">TikTik </a>-->
+
+    <!--&lt;!&ndash; Collapse button &ndash;&gt;-->
+    <!--<button style="float: left;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"-->
+            <!--aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>-->
+
+    <!--&lt;!&ndash; Collapsible content &ndash;&gt;-->
+    <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+
+        <!--&lt;!&ndash; Search form &ndash;&gt;-->
+        <!--<form class="form-inline">-->
+            <!--&lt;!&ndash;<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">&ndash;&gt;-->
+            <!--<ul class="navbar-nav mr-auto right">-->
+                <!--<li class="nav-item active">-->
+                    <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">My Offers</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">Network Ratings</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">Blog</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">About Us</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">Buy Jio</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</form>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; Collapsible content &ndash;&gt;-->
+
+<!--</nav>-->
 
     <!--Carousel Wrapper-->
     <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
@@ -364,31 +407,31 @@ padding-bottom: 20px;
                             </thead>
                             <tbody>
                             <tr class="0900">
-                                <th scope="row">09:00</th>
+                                <th scope="row"><label class="timelabel">09:00</label></th>
                             </tr>
                             <tr class="1000">
                                 <th scope="row">10:00</th>
                             </tr>
                             <tr class="1100">
-                                <th scope="row">11:00</th>
+                                <th scope="row" class="timelabel">11:00</th>
                             </tr>
                             <tr class="1200">
-                                <th scope="row">12:00</th>
+                                <th scope="row" class="timelabel">12:00</th>
                             </tr>
                             <tr class="0100">
-                                <th scope="row">01:00</th>
+                                <th scope="row" class="timelabel">01:00</th>
                             </tr>
                             <tr class="0200">
-                                <th scope="row">02:00</th>
+                                <th scope="row" class="timelabel">02:00</th>
                             </tr>
                             <tr class="0300">
-                                <th scope="row">03:00</th>
+                                <th scope="row" class="timelabel">03:00</th>
                             </tr>
                             <tr class="0400">
-                                <th scope="row">04:00</th>
+                                <th scope="row" class="timelabel">04:00</th>
                             </tr>
                             <tr class="0500">
-                                <th scope="row">05:00</th>
+                                <th scope="row" class="timelabel">05:00</th>
                             </tr>
                             </tbody>
                         </table>
@@ -652,8 +695,8 @@ padding-bottom: 20px;
             $('.buy-jio').click(function () {
                 $('.main-pane').hide();
                 $('.port-pane').hide();
-                $('.form-pane').hide();
-                $('.buy-pane').show();
+                $('.form-pane').show();
+                $('.buy-pane').hide();
                 $('.firebaseui-country-selector').hide();
                 $('.firebaseui-id-phone-number').val("+91");
                 $('.firebaseui-id-phone-number').focus();
