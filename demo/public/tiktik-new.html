@@ -246,9 +246,9 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <!-- Search form -->
-        <form class="form-inline">
+        <div class="form-inline" style="margin-left: 50%">
             <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
-            <ul class="navbar-nav mr-auto right">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -268,7 +268,7 @@
                     <a class="nav-link" href="#">Buy Jio</a>
                 </li>
             </ul>
-        </form>
+        </div>
     </div>
     <!-- Collapsible content -->
 
@@ -386,6 +386,54 @@
                                 </div>
                             </div>
 
+
+                            <div class="calendar-pane" style="display: none;color: #000000">
+                                <table class="table white" style="table-layout: fixed;text-align: center">
+                                    <thead>
+                                    <tr>
+                                        <th><i style="float:left;cursor: pointer" class="back-to-main-pane fa fa-arrow-left fa-2x black-text"></th>
+                                        <th class="row-heading"></th>
+                                        <th class="row-heading"></th>
+                                        <th class="row-heading"></th>
+                                        <th class="row-heading"></th>
+                                        <th class="row-heading"></th>
+                                        <th class="row-heading"></th>
+                                        <th class="row-heading"></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="0900">
+                                        <th scope="row"><label class="timelabel">09:00</label></th>
+                                    </tr>
+                                    <tr class="1000">
+                                        <th scope="row">10:00</th>
+                                    </tr>
+                                    <tr class="1100">
+                                        <th scope="row" class="timelabel">11:00</th>
+                                    </tr>
+                                    <tr class="1200">
+                                        <th scope="row" class="timelabel">12:00</th>
+                                    </tr>
+                                    <tr class="0100">
+                                        <th scope="row" class="timelabel">01:00</th>
+                                    </tr>
+                                    <tr class="0200">
+                                        <th scope="row" class="timelabel">02:00</th>
+                                    </tr>
+                                    <tr class="0300">
+                                        <th scope="row" class="timelabel">03:00</th>
+                                    </tr>
+                                    <tr class="0400">
+                                        <th scope="row" class="timelabel">04:00</th>
+                                    </tr>
+                                    <tr class="0500">
+                                        <th scope="row" class="timelabel">05:00</th>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <button type="button" style="display: none;background: #FFFFFF; color: #E83F11;padding:10px;border-radius: 50px;cursor: pointer;width: 60%;" id="booknow" disabled>Book</button>
+                            </div>
+
                         </div>
                         <div class="col-sm-4"></div>
                     </div>
@@ -410,7 +458,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -471,7 +519,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- SCRIPTS -->
 
@@ -536,19 +584,19 @@
         function getfullday(i) {
             switch(i) {
                 case 0:
-                    return "Sunday";
+                    return "Sun";
                 case 1:
-                    return "Monday";
+                    return "Mon";
                 case 2:
-                    return "Tuesday";
+                    return "Tue";
                 case 3:
-                    return "Wednesday";
+                    return "Wed";
                 case 4:
-                    return "Thursday";
+                    return "Thu";
                 case 5:
-                    return "Friday";
+                    return "Fri";
                 case 6:
-                    return "Saturday";
+                    return "Sat";
                 default:
                     return "Not a Date";
             }
@@ -565,7 +613,7 @@
             var day = getfullday(recurdate.getDay());
             var fulldaterev = recurdate.getFullYear()+'-'+(recurdate.getMonth()+1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+'-'+recurdate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
             var fulldate = recurdate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+'-'+(recurdate.getMonth()+1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+'-'+recurdate.getFullYear();
-            $(obj).html(day+'<br>'+fulldate);
+            $(obj).html(day+'<br><label style="font-size:medium">'+recurdate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+'</label>');
             $('.0900').append('<td class="'+fulldaterev+'T09 slot slot-div"></td>');
             $('.1000').append('<td class="'+fulldaterev+'T10 slot slot-div"></td>');
             $('.1100').append('<td class="'+fulldaterev+'T11 slot slot-div"></td>');
@@ -712,18 +760,21 @@
             $('.buy-pane').hide();
             $('.main-pane').hide();
             $('.form-pane').hide();
+            $('.calendar-pane').hide();
             $('.port-pane').show();
         });
         $('.back-to-main-pane').click(function(){
             $('.buy-pane').hide();
             $('.port-pane').hide();
             $('.form-pane').hide();
+            $('.calendar-pane').hide();
             // firebase.auth().signOut();
             $('.main-pane').show();
         });
         $('.buy-jio').click(function () {
             $('.main-pane').hide();
             $('.port-pane').hide();
+            $('.calendar-pane').hide();
             $('.form-pane').show();
             $('.buy-pane').hide();
             $('.firebaseui-country-selector').hide();
@@ -758,7 +809,7 @@
                         $('#book-a-slot').attr('disabled', 'disabled');
                         customfield = "SBP";
                         var obj = { "callName":"getslots", "areaId": areaId, "dateTime": date.getTime()};
-                        alert("here");
+                        // alert("here");
                         $.ajax
                         ({
                             type:"POST",
@@ -819,8 +870,11 @@
         });
 
         $('#book-a-slot').click(function (event) {
-            $('#exampleModal').modal('show');
-            $('#booknow').attr('disabled','disabled');
+            // $('#exampleModal').modal('show');
+            $('.form-pane').hide();
+            $('.calendar-pane').show();
+            // $('#booknow').attr('disabled','disabled');
+            $('#booknow').hide();
         });
 
         function CreateCalendarAsPerResult(resultjson) {
@@ -842,7 +896,7 @@
                 var slotid = slotdatesclasses[i].split('slotid')[1];
                 $('.'+classname).addClass('ava-slot');
                 $('.'+classname).removeClass('slot');
-                $('.'+classname).html(slotid);
+                $('.'+classname).html('<label style="font-size:xx-small">'+slotid+'</label>');
             }
             // console.log(slotdates);
         }
@@ -858,6 +912,7 @@
 
         $(document.body).on('click', '.ava-slot' ,function(){
             slotId = $(this).text();
+            $('#booknow').show();
             $('#booknow').removeAttr('disabled');
             $('.ava-slot').css('background','#00FF00');
             $('.ava-slot').css('color','#00FF00');
@@ -879,11 +934,12 @@
                 success: function(result)
                 {
                     console.log(result);
-                    $('#exampleModal').modal('toggle');
+                    // $('#exampleModal').modal('toggle');
                     $('.buy-pane').hide();
                     $('.main-pane').hide();
                     $('.form-pane').hide();
                     $('.port-pane').hide();
+                    $('.calendar-pane').hide();
                     $('.confirm-pane').show();
                     $('#lead-h1').val("lead id - "+ result['leadId']);
                 }
@@ -891,8 +947,7 @@
             // $('#exampleModal').modal('toggle');
         });
 
-        $('.firebaseui-id-phone-number').focus(function (event) {
-            event.preventDefault();
+        $('.firebaseui-id-phone-number').focus(function () {
             $(this).css('border-bottom','0.5px solid #E83F11');
         });
 
