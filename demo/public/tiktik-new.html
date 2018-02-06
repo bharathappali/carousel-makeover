@@ -128,36 +128,36 @@
             display:none;
         }
 
-        .pignose-calendar .icon-arrow-left:before {
-            content: '<';
-        }
-        .pignose-calendar .icon-arrow-right:before {
-            content: '>';
-        }
+        /*.pignose-calendar .icon-arrow-left:before {*/
+            /*content: '<';*/
+        /*}*/
+        /*.pignose-calendar .icon-arrow-right:before {*/
+            /*content: '>';*/
+        /*}*/
 
-        .modal{
-            width: 100%;
-            min-width: 100%;
-        }
-        .modal-dialog {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+        /*.modal{*/
+            /*width: 100%;*/
+            /*min-width: 100%;*/
+        /*}*/
+        /*.modal-dialog {*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+            /*margin: 0;*/
+            /*padding: 0;*/
+        /*}*/
 
-        .modal-content {
-            height: auto;
-            width: auto;
-            min-height: 100%;
-            min-width: 100%;
-            border-radius: 0;
-        }
+        /*.modal-content {*/
+            /*height: auto;*/
+            /*width: auto;*/
+            /*min-height: 100%;*/
+            /*min-width: 100%;*/
+            /*border-radius: 0;*/
+        /*}*/
         @media (min-width: 576px){
-            .modal-dialog {
-                max-width: 100%;
-                margin: 0px auto;
-            }
+            /*.modal-dialog {*/
+                /*max-width: 100%;*/
+                /*margin: 0px auto;*/
+            /*}*/
         }
         .row-heading{
             text-align: center;
@@ -298,11 +298,11 @@
                             <h1 style="color: #ffffff"><img src="imgs/tiktik_logo_2x.png"> </h1>
                             <div class="main-pane" style="padding-left: 10px;padding-right: 10px">
                                 <!--<div class="card">-->
-                                    <div class="main-pane-address row">
-                                        <div class="col-sm-12 black-text mainaddress" style="display: flex;padding: 0;margin: 0;margin:0px auto;">
+                                <div class="main-pane-address row">
+                                    <div class="col-sm-12 black-text mainaddress" style="display: flex;padding: 0;margin: 0;margin:0px auto;">
 
-                                        </div>
                                     </div>
+                                </div>
                                 <div class="col-sm-12">
                                     <button class="buy-jio btn col-sm-8" style="background:#E83F11;border-radius: 50px">Buy / Switch to JIO</button>
                                 </div>
@@ -337,6 +337,35 @@
 
                             <div class="confirm-pane" style="display:none;">
                                 <h1 id="lead-h1"></h1>
+                                ORDER CONFIRMATION
+
+
+                                Congratulations!
+                                Your doorstop delivery is booked.
+
+                                Your Order Details Below
+                                Delivery Date: Thu Feb 01 2018
+                                Delivery Time: 13:00-14:00
+
+                                Your order will be available at:
+                                Kudlu Gate, Electronic City, , 560068
+
+                                Amount Payable:
+                                Rs. 99 for Doorstep Delivery +
+                                Applicable product charges
+                                Visit the store during the chosen time slot and
+                                contact Jio representative.
+
+                                Important points to note:
+                                1. 1. Valid Aadhaar ID is mandatory for eKYC process.
+                                2. You will have to be present at the address to do biometric
+                                authentication.
+                                3. You will receive an OTP via SMS on your mobile number. You will
+                                need to share this OTP with Jio representative for
+                                completing the order.
+                                4. In case you want to re-schedule the delivery, you can inform
+                                the rider (on call or at doorstep). You will be allowed to
+                                re-schedule only once.
                             </div>
 
                             <!--<div class="otp-pane">-->
@@ -458,68 +487,21 @@
 
 
 <!-- Modal -->
-<!-- div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="errormodal" tabindex="-1" role="dialog" aria-labelledby="errormodallabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Available Slots</h5>
+                <h5 class="modal-title" id="errormodallabel">Please try again !</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <table class="table white" style="table-layout: fixed;text-align: center">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th class="row-heading"></th>
-                            <th class="row-heading"></th>
-                            <th class="row-heading"></th>
-                            <th class="row-heading"></th>
-                            <th class="row-heading"></th>
-                            <th class="row-heading"></th>
-                            <th class="row-heading"></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr class="0900">
-                            <th scope="row"><label class="timelabel">09:00</label></th>
-                        </tr>
-                        <tr class="1000">
-                            <th scope="row">10:00</th>
-                        </tr>
-                        <tr class="1100">
-                            <th scope="row" class="timelabel">11:00</th>
-                        </tr>
-                        <tr class="1200">
-                            <th scope="row" class="timelabel">12:00</th>
-                        </tr>
-                        <tr class="0100">
-                            <th scope="row" class="timelabel">01:00</th>
-                        </tr>
-                        <tr class="0200">
-                            <th scope="row" class="timelabel">02:00</th>
-                        </tr>
-                        <tr class="0300">
-                            <th scope="row" class="timelabel">03:00</th>
-                        </tr>
-                        <tr class="0400">
-                            <th scope="row" class="timelabel">04:00</th>
-                        </tr>
-                        <tr class="0500">
-                            <th scope="row" class="timelabel">05:00</th>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" id="booknow" disabled>Book</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 <!-- SCRIPTS -->
 
@@ -558,19 +540,26 @@
 
 <script>
     var mobilenumber = "";
+    var cityId = "";
+    var areaId = "";
+    var slotId = "";
+    var firstname = "";
+    var lastname = "";
+    var address={};
+    var storeaddr = "";
+    var homeaddr = "";
+    var resultFinal={};
+    var  wlat,wlong;
+    var date =  new Date();
+    var recurdate = date;
+    var customfield = "";
+    var passing_obj_id = "";
+    var pincode = "";
+    var isStore = false;
+    var timeSlot = "";
+    var leadId = "";
     $(function() {
-        var cityId = "";
-        var areaId = "";
-        var slotId = "";
-        var firstname = "";
-        var lastname = "";
-        var address={};
-        var storeaddr = "";
-        var resultFinal={};
-        var  wlat,wlong;
-        var date =  new Date();
-        var recurdate = date;
-        var customfield = "";
+
         if (navigator.geolocation)
         {
             navigator.geolocation.getCurrentPosition(getLocation);
@@ -775,16 +764,18 @@
             $('.main-pane').hide();
             $('.port-pane').hide();
             $('.calendar-pane').hide();
-            $('.form-pane').show();
-            $('.buy-pane').hide();
+            $('.form-pane').hide();
+            $('.buy-pane').show();
             $('.firebaseui-country-selector').hide();
             $('.firebaseui-id-phone-number').val("+91");
             $('.firebaseui-id-phone-number').focus();
         });
 
         $('#store').click(function (event) {
+            isStore = true;
             firstname = $('#order_fname').val();
             lastname = $('#order_lname').val();
+            pincode = $("#order_pin").val();
             // $('#order_pin').val(this.value+String.fromCharCode(charCode));
             var url = "https://darpn.in/v1.0/jiostore/pincode/"+$("#order_pin").val();
             // alert(url);
@@ -841,6 +832,7 @@
         });
 
         $('#home').click(function (event) {
+            isStore = false;
             $('#book-a-slot').show();
             $('#book-a-slot').attr('disabled', 'disabled');
             $('#order_addr_div').show();
@@ -848,6 +840,7 @@
             $('#order_addr').removeAttr('readonly');
             $('#order_addr').attr('placeholder', 'Enter Delivery Address');
             customfield = "PHD";
+
             var obj = { "callName":"getslots", "areaId": ""+areaId+"", "dateTime": date.getTime()};
             $.ajax
             ({
@@ -875,6 +868,72 @@
             $('.calendar-pane').show();
             // $('#booknow').attr('disabled','disabled');
             $('#booknow').hide();
+            homeaddr = $('#order_addr').val();
+            var level_200_obj = "";
+            if(isStore){
+                level_200_obj = {
+                    "customerid": "NA",
+                    "leadid": "null",
+                    "mobilenumber": mobilenumber,
+                    "timestamp": (new Date()).getTime(),
+                    "firstname": firstname,
+                    "lastname": lastname,
+                    "pincode": pincode ,
+                    "address": storeaddr,
+                    "deliverytype": "SBP",
+                    "timeSlot": "null",
+                    "longitude": wlong,
+                    "latitude": wlat,
+                    "upc": "NA",
+                    "level": 200,
+                    "id": passing_obj_id
+                }
+            }else{
+                level_200_obj = {
+                    "customerid": "NA",
+                    "leadid": "null",
+                    "mobilenumber": mobilenumber,
+                    "timestamp": (new Date()).getTime(),
+                    "firstname": firstname,
+                    "lastname": lastname,
+                    "pincode": pincode ,
+                    "address": homeaddr,
+                    "deliverytype": "PHD",
+                    "timeSlot": "null",
+                    "longitude": wlong,
+                    "latitude": wlat,
+                    "upc": "NA",
+                    "level": 200,
+                    "id": passing_obj_id
+                }
+            }
+            $.ajax({
+                url: "https://darpn.in/v1.0/updatejiolead/",
+                type: "GET",
+                beforeSend: function (request) {
+                    request.setRequestHeader("Authorization", "Basic dGlrdGlrOjEyMw==");
+                    request.setRequestHeader("data", JSON.stringify(level_200_obj));
+                },
+                success: function (data) {
+                    if(data['status']=="1"){
+                        // $('.buy-pane').hide();
+                        // $('.main-pane').hide();
+                        // $('.port-pane').hide();
+                        // $('.calendar-pane').hide();
+                        // $('.form-pane').show();
+                        alert(data['id']);
+                        console.log("200 success")
+                        console.log(data);
+                    }else{
+                        // $('.main-pane').hide();
+                        // $('.port-pane').hide();
+                        // $('.calendar-pane').hide();
+                        // $('.form-pane').hide();
+                        // $('.buy-pane').show();
+                        // $('#errormodal').modal('toggle');
+                    }
+                },
+            });
         });
 
         function CreateCalendarAsPerResult(resultjson) {
@@ -914,6 +973,9 @@
             slotId = $(this).text();
             $('#booknow').show();
             $('#booknow').removeAttr('disabled');
+            var classname = $(this).attr('class').split(" ")[0]
+            var slotdate = classname.split("T")[0].split("-")[2]+"/"+classname.split("T")[0].split("-")[1]
+            timeSlot = $(this).attr('class').split(" ")[0].split("T")[1]+":00 "+slotdate;
             $('.ava-slot').css('background','#00FF00');
             $('.ava-slot').css('color','#00FF00');
             $(this).css('background','#3369E8');
@@ -933,8 +995,12 @@
                 url: "https://darpn.in/createlead",
                 success: function(result)
                 {
+                    var level_400_obj = "";
+                    var level_300_obj = "";
                     console.log(result);
+                    result=JSON.parse(result);
                     // $('#exampleModal').modal('toggle');
+                    leadId = result['leadId'];
                     $('.buy-pane').hide();
                     $('.main-pane').hide();
                     $('.form-pane').hide();
@@ -942,7 +1008,146 @@
                     $('.calendar-pane').hide();
                     $('.confirm-pane').show();
                     $('#lead-h1').val("lead id - "+ result['leadId']);
-                }
+                    if(result['success'] == "1"){
+                        if(isStore){
+                            level_400_obj = {
+                                "customerid": "NA",
+                                "leadid": leadId,
+                                "mobilenumber": mobilenumber,
+                                "timestamp": (new Date()).getTime(),
+                                "firstname": firstname,
+                                "lastname": lastname,
+                                "pincode": pincode ,
+                                "address": storeaddr,
+                                "deliverytype": "SBP",
+                                "timeSlot": timeSlot,
+                                "longitude": wlong,
+                                "latitude": wlat,
+                                "upc": "NA",
+                                "level": 400,
+                                "id": passing_obj_id
+                            }
+                        }else{
+                            level_400_obj = {
+                                "customerid": "NA",
+                                "leadid": leadId,
+                                "mobilenumber": mobilenumber,
+                                "timestamp": (new Date()).getTime(),
+                                "firstname": firstname,
+                                "lastname": lastname,
+                                "pincode": pincode ,
+                                "address": homeaddr,
+                                "deliverytype": "PHD",
+                                "timeSlot": timeSlot,
+                                "longitude": wlong,
+                                "latitude": wlat,
+                                "upc": "NA",
+                                "level": 400,
+                                "id": passing_obj_id
+                            }
+                        }
+                        $.ajax({
+                            url: "https://darpn.in/v1.0/updatejiolead/",
+                            type: "GET",
+                            beforeSend: function (request) {
+                                request.setRequestHeader("Authorization", "Basic dGlrdGlrOjEyMw==");
+                                request.setRequestHeader("data", JSON.stringify(level_400_obj));
+                            },
+                            success: function (data) {
+                                if(data['status']=="1"){
+                                    // $('.buy-pane').hide();
+                                    // $('.main-pane').hide();
+                                    // $('.port-pane').hide();
+                                    // $('.calendar-pane').hide();
+                                    // $('.form-pane').show();
+                                    alert("status 400 pass");
+                                }else{
+                                    // $('.main-pane').hide();
+                                    // $('.port-pane').hide();
+                                    // $('.calendar-pane').hide();
+                                    // $('.form-pane').hide();
+                                    // $('.buy-pane').show();
+                                    // $('#errormodal').modal('toggle');
+                                    alert("status 400 fail");
+                                }
+                                console.log("400 success")
+                                console.log(JSON.stringify(level_400_obj))
+                                console.log(data);
+                            },
+                        });
+                    }else if(result['success'] == "0"){
+
+                        if(isStore){
+                            level_300_obj = {
+                                "customerid": "NA",
+                                "leadid": "null",
+                                "mobilenumber": mobilenumber,
+                                "timestamp": (new Date()).getTime(),
+                                "firstname": firstname,
+                                "lastname": lastname,
+                                "pincode": pincode ,
+                                "address": storeaddr,
+                                "deliverytype": "SBP",
+                                "timeSlot": timeSlot,
+                                "longitude": wlong,
+                                "latitude": wlat,
+                                "upc": "NA",
+                                "level": 300,
+                                "id": passing_obj_id
+                            }
+                        }else{
+                            level_300_obj = {
+                                "customerid": "NA",
+                                "leadid": "null",
+                                "mobilenumber": mobilenumber,
+                                "timestamp": (new Date()).getTime(),
+                                "firstname": firstname,
+                                "lastname": lastname,
+                                "pincode": pincode ,
+                                "address": homeaddr,
+                                "deliverytype": "PHD",
+                                "timeSlot": timeSlot,
+                                "longitude": wlong,
+                                "latitude": wlat,
+                                "upc": "NA",
+                                "level": 300,
+                                "id": passing_obj_id
+                            }
+                        }
+                        $.ajax({
+                            url: "https://darpn.in/v1.0/updatejiolead/",
+                            type: "GET",
+                            beforeSend: function (request) {
+
+                                request.setRequestHeader("Authorization", "Basic dGlrdGlrOjEyMw==");
+                                request.setRequestHeader("data", JSON.stringify(level_300_obj));
+                            },
+                            success: function (data) {
+                                if(data['status']=="1"){
+                                    // $('.buy-pane').hide();
+                                    // $('.main-pane').hide();
+                                    // $('.port-pane').hide();
+                                    // $('.calendar-pane').hide();
+                                    // $('.form-pane').show();
+                                    alert("status 300 pass");
+                                }else{
+                                    // $('.main-pane').hide();
+                                    // $('.port-pane').hide();
+                                    // $('.calendar-pane').hide();
+                                    // $('.form-pane').hide();
+                                    // $('.buy-pane').show();
+                                    // $('#errormodal').modal('toggle');
+                                    alert("status 300 fail");
+                                }
+                                console.log("300 success")
+                                console.log(JSON.stringify(level_300_obj))
+                                console.log(data);
+                            },
+                        });
+                    }
+
+                },
+
             });
             // $('#exampleModal').modal('toggle');
         });
