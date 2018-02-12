@@ -47,7 +47,7 @@
 
         #bars{
             position: relative;
-            margin: 15px auto 0 auto;
+            /*margin: 15px auto 0 auto;*/
             width: 62px;
             height: 30px;
             -webkit-box-reflect: below 1px linear-gradient(color-stops(transparent, rgba(#fff,.2)));
@@ -93,11 +93,15 @@
             /*background: linear-gradient(to right, #3498db, #2c3e50); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
             margin-top: 50px;
             background: white;
-            border-radius: 50px;
+            border-radius: 16px;
             padding-top: 20px;
             padding-bottom: 20px;
+            /*box-shadow: 5px 10px rgba(255,255,255,0.5);*/
 
+        }
 
+        .card-main:hover {
+            z-index: 1000px;
         }
 
         .address-card {
@@ -111,14 +115,14 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: white;
-            color: black;
+            background-color: #E83F11;
+            color: #FFFFFF;
             text-align: center;
         }
 
-        .hoverable:hover {
-            background: rgba(255,255,255,0.5);
-        }
+        /*.hoverable:hover {*/
+            /*background: rgba(255,255,255,0.5);*/
+        /*}*/
 
         .port-pane{
             display: none;
@@ -129,43 +133,50 @@
         }
 
         /*.pignose-calendar .icon-arrow-left:before {*/
-            /*content: '<';*/
+        /*content: '<';*/
         /*}*/
         /*.pignose-calendar .icon-arrow-right:before {*/
-            /*content: '>';*/
+        /*content: '>';*/
         /*}*/
 
         /*.modal{*/
-            /*width: 100%;*/
-            /*min-width: 100%;*/
+        /*width: 100%;*/
+        /*min-width: 100%;*/
         /*}*/
         /*.modal-dialog {*/
-            /*width: 100%;*/
-            /*height: 100%;*/
-            /*margin: 0;*/
-            /*padding: 0;*/
+        /*width: 100%;*/
+        /*height: 100%;*/
+        /*margin: 0;*/
+        /*padding: 0;*/
         /*}*/
 
         /*.modal-content {*/
-            /*height: auto;*/
-            /*width: auto;*/
-            /*min-height: 100%;*/
-            /*min-width: 100%;*/
-            /*border-radius: 0;*/
+        /*height: auto;*/
+        /*width: auto;*/
+        /*min-height: 100%;*/
+        /*min-width: 100%;*/
+        /*border-radius: 0;*/
         /*}*/
         @media (min-width: 576px){
             /*.modal-dialog {*/
-                /*max-width: 100%;*/
-                /*margin: 0px auto;*/
+            /*max-width: 100%;*/
+            /*margin: 0px auto;*/
             /*}*/
         }
         .row-heading{
             text-align: center;
         }
         .ava-slot{
-            background: #00FF00;
-            color: #00FF00;
-            border: 5px solid #FFFFFF;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            position: absolute;
+            background: #D3D3D3;
+            color: #D3D3D3;
+            border: 2px solid #009688;
+            margin: 1px;
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             -khtml-user-select: none;
@@ -175,12 +186,20 @@
         }
 
         .ava-slot:focus {
-            background-color:blue;
+            background-color: #009688;
+            color: #009688;
         }
         .slot {
-            background: #FFFFFF;
-            color: #FFFFFF;
-            border: 5px solid #FFFFFF;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            border-radius: 5px;
+            width: 50px;
+            height: 50px;
+            margin: 1px;
+            position: absolute;
+            background: #D3D3D3;
+            color: #D3D3D3;
+            border: 2px solid #FFFFFF;
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             -khtml-user-select: none;
@@ -212,20 +231,41 @@
             box-shadow: none !important;
         }
 
-        #store:hover{
-            background: #E83F11!important;
-            color: #FFFFFF!important;
-        }
-
-        #home:hover{
-            background: #E83F11!important;
-            color: #FFFFFF!important;
-        }
 
         #book-a-slot:hover{
             background: #E83F11!important;
             color: #FFFFFF!important;
         }
+
+        .tiktik_btn {
+            background: #FFFFFF; color: #E83F11;padding:10px;border-radius: 50px;cursor: pointer;
+        }
+
+        .tiktik_btn:hover {
+            background: #E83F11; color: #FFFFFF;
+        }
+
+        .tiktik_btn:focus {
+            background: #E83F11; color: #FFFFFF;
+        }
+
+        .tiktik_btn_disabled,.tiktik_btn_disabled:focus,.tiktik_btn_disabled:hover{
+            border: 1px solid #999999;
+            background-color: #cccccc;
+            color: #666666;
+            padding:10px;border-radius: 50px;cursor: not-allowed;
+        }
+
+        .rating-block{
+            height: 80px;
+            padding: 2px;
+        }
+
+
+        /*.rating-block:hover {*/
+            /*background: #009688;*/
+            /*opacity: 0.1;*/
+        /*}*/
 
     </style>
 
@@ -285,26 +325,28 @@
             <div class="view hm-black-light">
                 <div class="full-bg-img" style="background: rgb(222,222,222);"></div>
                 <!--Video source-->
-                <!-- <video class="video-full" autoplay loop>
-                    <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
-                </video> -->
+                <video class="video-full" autoplay loop>
+                    <source src="https://coverr.co/s3/mp4/Busy-People.mp4" type="video/mp4" />
+                </video>
 
             </div>
-            <div class="carousel-caption">
+            <div class="carousel-caption" style="background: rgba(0,0,0,0.4)">
                 <div class="col-sm-12 animated fadeIn" style="margin-top: 50px">
                     <div class="row">
                         <div class="col-sm-4"></div>
-                        <div class="card-main col-md-4">
+                        <div class="card-main hoverable col-md-4">
                             <h1 style="color: #ffffff"><img src="imgs/tiktik_logo_2x.png"> </h1>
+
                             <div class="main-pane" style="padding-left: 10px;padding-right: 10px">
                                 <!--<div class="card">-->
+                                <h4 style="color: #000">Fastest Network Here</h4>
                                 <div class="main-pane-address row">
                                     <div class="col-sm-12 black-text mainaddress" style="display: flex;padding: 0;margin: 0;margin:0px auto;">
 
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
-                                    <button class="buy-jio btn col-sm-8" style="background:#E83F11;border-radius: 50px">Buy / Switch to JIO</button>
+                                    <button class="buy-jio hoverable col-sm-8 tiktik_btn" style="margin-top: 2px">Buy / Port to Jio</button>
                                 </div>
                                 <!--</div>-->
                             </div>
@@ -335,37 +377,37 @@
                                 </div>
                             </div>
 
-                            <div class="confirm-pane" style="display:none;">
-                                <h1 id="lead-h1"></h1>
-                                ORDER CONFIRMATION
+                            <div class="confirm-pane" style="display:none; color: #000;">
+                                <h1>ORDER CONFIRMATION</h1>
+                                <p>Congratulations!</p><br>
 
 
-                                Congratulations!
-                                Your doorstop delivery is booked.
+                                <p>Your <label id="delivery_type_label_conformation"></label> is booked.</p>
 
-                                Your Order Details Below
-                                Delivery Date: Thu Feb 01 2018
-                                Delivery Time: 13:00-14:00
+                                <p style="color: #ee643f;">Your Order Details Below<br>
+                                    Delivery Date: <label id="delivery_date_conformation"></label><br>
+                                    Delivery Time: <label id="delivery_time_conformation"></label></p>
 
                                 Your order will be available at:
-                                Kudlu Gate, Electronic City, , 560068
+                                <label id="delivery_store_addr" style="color: #ee643f;"></label>
 
-                                Amount Payable:
-                                Rs. 99 for Doorstep Delivery +
-                                Applicable product charges
+                                <p>Amount Payable:</p>
+                                <p style="color: #ee643f;">Rs. 99 for Doorstep Delivery +
+                                    Applicable product charges</p><p>
                                 Visit the store during the chosen time slot and
-                                contact Jio representative.
-
-                                Important points to note:
-                                1. 1. Valid Aadhaar ID is mandatory for eKYC process.
-                                2. You will have to be present at the address to do biometric
-                                authentication.
-                                3. You will receive an OTP via SMS on your mobile number. You will
-                                need to share this OTP with Jio representative for
-                                completing the order.
-                                4. In case you want to re-schedule the delivery, you can inform
-                                the rider (on call or at doorstep). You will be allowed to
-                                re-schedule only once.
+                                contact Jio representative.</p>
+                                <p>
+                                    Important points to note:
+                                    <br> 1. Valid Aadhaar ID is mandatory for eKYC process.
+                                    <br>2. You will have to be present at the address to do biometric
+                                    authentication.
+                                    <br>3. You will receive an OTP via SMS on your mobile number. You will
+                                    need to share this OTP with Jio representative for
+                                    completing the order.
+                                    <br>4. In case you want to re-schedule the delivery, you can inform
+                                    the rider (on call or at doorstep). You will be allowed to
+                                    re-schedule only once.
+                                </p>
                             </div>
 
                             <!--<div class="otp-pane">-->
@@ -397,12 +439,28 @@
                                     </div>
                                     <div class="md-form">
                                         <!--<div class="radio">-->
-                                        <button name="store" id="store" style="background: #FFFFFF; color: #E83F11;padding:10px;border-radius: 50px;cursor: pointer;width: 40%;">Store PickUp</button>
+                                        <table style="table-layout: fixed;text-align: center;width: 100%">
+                                            <tr>
+                                                <td style="width: 50%;">
+                                                    <button type="button" name="store" id="store" class="hoverable tiktik_btn_disabled" disabled>Store PickUp</button>
+                                                </td>
+                                                <td style="width: 50%;">
+                                                    <button type="button" name="home" id="home" class="hoverable tiktik_btn_disabled" disabled>Home Delivery</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><span style="color: #E83F11;font-size: x-small">Charges: &#8377; 99</span></td>
+                                            </tr>
+                                        </table>
+
                                         <!--</div>-->
                                         <!--<div class="radio">-->
-                                        <button name="home" id="home" style="background: #FFFFFF; color: #E83F11;padding:10px;border-radius: 50px;cursor: pointer;width: 40%;">Home Delivery</button>
+
+
                                         <!--</div>-->
                                     </div>
+
                                     <div class="md-form" id="order_addr_div" style="display: none" >
                                         <!--<i class="fa fa-pencil prefix grey-text"></i>-->
                                         <textarea class="form-control md-textarea col-sm-12" type="text" id="order_addr" name="order_addr" style="border: 0.5px solid rgba(0, 0, 0, .26);padding-left: 20px;border-radius: 5px;height: 100px;"></textarea>
@@ -410,7 +468,12 @@
                                     </div>
                                     <div class="md-form text-center">
                                         <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
-                                        <button id="book-a-slot" style="display: none;background: #FFFFFF; color: #E83F11;padding:10px;border-radius: 50px;cursor: pointer;width: 60%;" disabled> Book a Slot</button>
+                                        <button id="book-a-slot" class="hoverable tiktik_btn" style="display: none;width: 60%;" disabled> Book a Slot</button>
+                                    </div>
+                                    <div class="md-form" style="text-align: left; color: #000000">
+                                        <input type="checkbox" name="tnc" class="tnc" style="color: #009688" checked> I have a valid Aadhaar ID and will be present to authenticate myself during eKYC at the time of delivery.<br>
+                                        <input type="checkbox" name="tnc" class="tnc" style="color: #009688" checked> I agree to pay doorstep delivery fee of Rs.99 at the time of delivery.<br>
+                                        <input type="checkbox" name="tnc" class="tnc" style="color: #009688" checked> I have read & agree to the <a href="https://www.jio.com/en-in/home-delivery-terms-conditions" target="_blank"> Terms and conditions</a> and <a href="https://www.jio.com/en-in/privacy-policy" target="_blank"> Privacy Policy </a>.<br>
                                     </div>
                                 </div>
                             </div>
@@ -432,10 +495,10 @@
                                     </thead>
                                     <tbody>
                                     <tr class="0900">
-                                        <th scope="row"><label class="timelabel">09:00</label></th>
+                                        <th scope="row" class="timelabel">09:00</th>
                                     </tr>
                                     <tr class="1000">
-                                        <th scope="row">10:00</th>
+                                        <th scope="row" class="timelabel">10:00</th>
                                     </tr>
                                     <tr class="1100">
                                         <th scope="row" class="timelabel">11:00</th>
@@ -460,7 +523,7 @@
                                     </tr>
                                     </tbody>
                                 </table>
-                                <button type="button" style="display: none;background: #FFFFFF; color: #E83F11;padding:10px;border-radius: 50px;cursor: pointer;width: 60%;" id="booknow" disabled>Book</button>
+                                <button type="button" class="hoverable tiktik_btn" style="display: none;width: 60%;" id="booknow" disabled>Book</button>
                             </div>
 
                         </div>
@@ -602,17 +665,27 @@
             var day = getfullday(recurdate.getDay());
             var fulldaterev = recurdate.getFullYear()+'-'+(recurdate.getMonth()+1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+'-'+recurdate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
             var fulldate = recurdate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+'-'+(recurdate.getMonth()+1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+'-'+recurdate.getFullYear();
-            $(obj).html(day+'<br><label style="font-size:medium">'+recurdate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+'</label>');
-            $('.0900').append('<td class="'+fulldaterev+'T09 slot slot-div"></td>');
-            $('.1000').append('<td class="'+fulldaterev+'T10 slot slot-div"></td>');
-            $('.1100').append('<td class="'+fulldaterev+'T11 slot slot-div"></td>');
-            $('.1200').append('<td class="'+fulldaterev+'T12 slot slot-div"></td>');
-            $('.0100').append('<td class="'+fulldaterev+'T13 slot slot-div"></td>');
-            $('.0200').append('<td class="'+fulldaterev+'T14 slot slot-div"></td>');
-            $('.0300').append('<td class="'+fulldaterev+'T15 slot slot-div"></td>');
-            $('.0400').append('<td class="'+fulldaterev+'T16 slot slot-div"></td>');
-            $('.0500').append('<td class="'+fulldaterev+'T17 slot slot-div"></td>');
+            $(obj).html(day+'<br><label style="font-size:xx-large">'+recurdate.getDate().toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})+'</label>');
+            $('.0900').append('<td style="padding: 2px"><div class="'+fulldaterev+'T09 slot slot-div"></div></td>');
+            $('.1000').append('<td style="padding: 2px"><div class="'+fulldaterev+'T10 slot slot-div"></div></td>');
+            $('.1100').append('<td style="padding: 2px"><div class="'+fulldaterev+'T11 slot slot-div"></div></td>');
+            $('.1200').append('<td style="padding: 2px"><div class="'+fulldaterev+'T12 slot slot-div"></div></td>');
+            $('.0100').append('<td style="padding: 2px"><div class="'+fulldaterev+'T13 slot slot-div"></div></td>');
+            $('.0200').append('<td style="padding: 2px"><div class="'+fulldaterev+'T14 slot slot-div"></div></td>');
+            $('.0300').append('<td style="padding: 2px"><div class="'+fulldaterev+'T15 slot slot-div"></div></td>');
+            $('.0400').append('<td style="padding: 2px"><div class="'+fulldaterev+'T16 slot slot-div"></div></td>');
+            $('.0500').append('<td style="padding: 2px"><div class="'+fulldaterev+'T17 slot slot-div"></div></td>');
             recurdate = new Date(recurdate.setHours(recurdate.getHours()+24));
+        });
+        var selected_phd_sbp = false;
+        $('.tnc').mousedown(function (event) {
+            if (!$(this).is(':checked')) {
+                if(selected_phd_sbp){
+                    $('#book-a-slot').show();
+                }
+            }else{
+                $('#book-a-slot').hide();
+            }
         });
 
         $("#order_mobnum").on('keydown', function(evt) {
@@ -630,6 +703,7 @@
             return true;
         });
 
+        var correct_check = false;
         $("#order_pin").keypress(function(evt) {
             evt = (evt) ? evt : window.event;
             var charCode = (evt.which) ? evt.which : evt.keyCode;
@@ -641,6 +715,146 @@
                 return true;
             }else{
                 return false;
+            }
+        });
+        var lcheck = false;
+        var fcheck = false;
+        var pincheck = false;
+        $('#order_pin').keyup(function (evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 47 && charCode < 58) {
+                if( this.value.length == 6) {
+                    pincheck = true;
+                    if(!lcheck){
+                        $('#order_lname').css('background-image','url(imgs/error.png)');
+                        $('#order_lname').css('background-position','7px 7px');
+                        $('#order_lname').css('background-repeat','no-repeat');
+                        $('#order_lname').css('background-size','15px 15px');
+                    }
+                    if(!fcheck){
+                        $('#order_fname').css('background-image','url(imgs/error.png)');
+                        $('#order_fname').css('background-position','7px 7px');
+                        $('#order_fname').css('background-repeat','no-repeat');
+                        $('#order_fname').css('background-size','15px 15px');
+                    }
+                    if(fcheck && lcheck) {
+                        $('#store').removeClass('tiktik_btn_disabled');
+                        $('#store').addClass('tiktik_btn');
+                        $('#home').removeClass('tiktik_btn_disabled');
+                        $('#home').addClass('tiktik_btn');
+                        $('#store').removeAttr('disabled');
+                        $('#home').removeAttr('disabled');
+                    }
+                }
+            }else if(charCode == 8){
+                if(this.value.length !=6){
+                    pincheck = false;
+                    $('#store').removeClass('tiktik_btn');
+                    $('#store').addClass('tiktik_btn_disabled');
+                    $('#home').removeClass('tiktik_btn');
+                    $('#home').addClass('tiktik_btn_disabled');
+                    $('#store').attr('disabled','disabled');
+                    $('#home').attr('disabled','disabled');
+                }
+            }
+        });
+
+        $('#order_fname').focus(function () {
+            $('#order_fname').css('background-image','none');
+        });
+
+        $('#order_pin').focus(function () {
+            $('#order_pin').css('background-image','none');
+        });
+
+        $('#order_lname').focus(function () {
+            $('#order_lname').css('background-image','none');
+        });
+
+        $('#order_fname').keypress(function (evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || charCode == 32) {
+                return true;
+            }
+            return false;
+        });
+
+        $('#order_lname').keypress(function (evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || charCode == 32) {
+                return true;
+            }
+            return false;
+        });
+
+        $('#order_fname').keyup(function () {
+            if(this.value.length >= 1){
+                fcheck = true;
+                if(lcheck && pincheck){
+                    $('#store').removeClass('tiktik_btn_disabled');
+                    $('#store').addClass('tiktik_btn');
+                    $('#home').removeClass('tiktik_btn_disabled');
+                    $('#home').addClass('tiktik_btn');
+                    $('#store').removeAttr('disabled');
+                    $('#home').removeAttr('disabled');
+                }
+                if(!lcheck){
+                    $('#order_lname').css('background-image','url(imgs/error.png)');
+                    $('#order_lname').css('background-position','7px 7px');
+                    $('#order_lname').css('background-repeat','no-repeat');
+                    $('#order_lname').css('background-size','15px 15px');
+                }
+                if(!pincheck){
+                    $('#order_pin').css('background-image','url(imgs/error.png)');
+                    $('#order_pin').css('background-position','7px 7px');
+                    $('#order_pin').css('background-repeat','no-repeat');
+                    $('#order_pin').css('background-size','15px 15px');
+                }
+            }else{
+                fcheck = false;
+                $('#store').removeClass('tiktik_btn');
+                $('#store').addClass('tiktik_btn_disabled');
+                $('#home').removeClass('tiktik_btn');
+                $('#home').addClass('tiktik_btn_disabled');
+                $('#store').attr('disabled','disabled');
+                $('#home').attr('disabled','disabled');
+            }
+        });
+
+        $('#order_lname').keyup(function () {
+            if(this.value.length >= 1){
+                lcheck = true;
+                if(fcheck && pincheck){
+                    $('#store').removeClass('tiktik_btn_disabled');
+                    $('#store').addClass('tiktik_btn');
+                    $('#home').removeClass('tiktik_btn_disabled');
+                    $('#home').addClass('tiktik_btn');
+                    $('#store').removeAttr('disabled');
+                    $('#home').removeAttr('disabled');
+                }
+                if(!fcheck){
+                    $('#order_fname').css('background-image','url(imgs/error.png)');
+                    $('#order_fname').css('background-position','7px 7px');
+                    $('#order_fname').css('background-repeat','no-repeat');
+                    $('#order_fname').css('background-size','15px 15px');
+                }
+                if(!pincheck){
+                    $('#order_pin').css('background-image','url(imgs/error.png)');
+                    $('#order_pin').css('background-position','7px 7px');
+                    $('#order_pin').css('background-repeat','no-repeat');
+                    $('#order_pin').css('background-size','15px 15px');
+                }
+            }else{
+                lcheck = false;
+                $('#store').removeClass('tiktik_btn');
+                $('#store').addClass('tiktik_btn_disabled');
+                $('#home').removeClass('tiktik_btn');
+                $('#home').addClass('tiktik_btn_disabled');
+                $('#store').attr('disabled','disabled');
+                $('#home').attr('disabled','disabled');
             }
         });
 
@@ -701,28 +915,28 @@
                 [1.0, "#E83F11"]
             ],
             pointer: {
-                length: 0.4,
+                length: 0.3,
                 strokeWidth: 0.035,
                 color: '#E83F11'
             },
 
             strokeColor: '#FFCCBC'
         };
+        var is_canvas = false;
 
         function CreateTableFromJSON(results) {
             for (var i =0 ;  i< results.length; i++) {
-                var divset = '<div class="hoverable" style="display: flex; padding: 0px 5px 0px 5px; margin-top: 5px;">\n' +
-                    '                                    <div class="col-sm-6" style="min-width: 50%;">\n' +
-                    '                                        <img class="white" src="imgs/'+results[i]['operator']+'.png" style="margin-top: 12px; max-width: 100px;max-height: 48px;">\n' +
-                    '                                    </div>\n' +
-                    '                                    <div class="col-sm-3" style="min-width: 25%">\n' +
+
+                var divset = '<div class="hoverable rating-block" style="display: flex; margin-top: 5px;">\n' +
+                    '                                    <table style="table-layout: fixed; text-align: center;width: 100%;height: 100%"><tr><td style="width: 50%"> \n' +
+                    '                                        <img class="white" src="imgs/'+results[i]['operator']+'.png" style="max-width: 100px;max-height: 48px;">\n' +
+                    '                                    </td>\n' +
+                    '                                    <td style="width: 25%">\n' +
                     '                                        <div id="bars">\n';
                 var nextstr = '</div>\n' +
-                    '                                    </div>\n' +
-                    '                                    <div class="col-sm-3" style="min-width: 25%">\n' +
-                    '                                        <div id="ratinglabel'+i+'" style="color: #E83F11"></div>\n' +
-                    '                                       <canvas width="70" height="72" id="canvas'+i+'" style="margin-top: -35px"></canvas> \n' +
-                    '                                    </div>\n' +
+                    '                                    </td>\n' +
+                    '                                    <td style="width: 25%">\n' + getRatingLabel(i,results[i]['data-rating'])+
+                    '                                    </td>\n' +
                     '                                </div>';
                 var barsstr = "";
                 for(var j=0; j<5; j++) {
@@ -734,13 +948,16 @@
 
                 }
                 $('.main-pane').append(divset+barsstr+nextstr);
-                var target = document.getElementById('canvas'+i);
-                var gauge = new Gauge(target).setOptions(opts);
-                gauge.setTextField(document.getElementById('ratinglabel'+i));
-                gauge.maxValue = 5;
-                gauge.setMinValue(0);
-                gauge.animationSpeed = 256;
-                gauge.set(results[i]['data-rating']);
+                if(is_canvas){
+                    var target = document.getElementById('canvas'+i);
+                    var gauge = new Gauge(target).setOptions(opts);
+                    // gauge.setTextField(document.getElementById('ratinglabel'+i));
+                    gauge.maxValue = 5;
+                    gauge.setMinValue(0);
+                    gauge.animationSpeed = 256;
+                    gauge.set(results[i]['data-rating']);
+                }
+
                 // alert("3");
             }
         }
@@ -766,19 +983,42 @@
             $('.calendar-pane').hide();
             $('.form-pane').hide();
             $('.buy-pane').show();
+            $('.firebaseui-tos').hide();
             $('.firebaseui-country-selector').hide();
             $('.firebaseui-id-phone-number').val("+91");
             $('.firebaseui-id-phone-number').focus();
         });
 
+        function getRatingLabel(index,rating){
+            switch(rating){
+                case 5:
+                    is_canvas = true;
+                    return '<canvas width="70" height="72" id="canvas'+index+'" style="margin-top: -25px"></canvas><div id="ratinglabel'+index+'" style="color: #E83F11;margin-top: -10px">10+ <label style="color: #E83F11;font-size: small">mbps</label></div>';
+                case 4:
+                    is_canvas = true;
+                    return '<canvas width="70" height="72" id="canvas'+index+'" style="margin-top: -25px"></canvas><div id="ratinglabel'+index+'" style="color: #E83F11;margin-top: -10px">5-10 <label style="color: #E83F11;font-size: small">mbps</label></div>';
+                case 3:
+                    is_canvas = true;
+                    return '<canvas width="70" height="72" id="canvas'+index+'" style="margin-top: -25px"></canvas><div id="ratinglabel'+index+'" style="color: #E83F11;margin-top: -10px">3-5 <label style="color: #E83F11;font-size: small">mbps</label></div>';
+                case 2:
+                    is_canvas = true;
+                    return '<canvas width="70" height="72" id="canvas'+index+'" style="margin-top: -25px"></canvas><div id="ratinglabel'+index+'" style="color: #E83F11;margin-top: -10px">1-3 <label style="color: #E83F11;font-size: small">mbps</label></div>';
+                case 1:
+                    is_canvas = true;
+                    return '<canvas width="70" height="72" id="canvas'+index+'" style="margin-top: -25px"></canvas><div id="ratinglabel'+index+'" style="color: #E83F11;margin-top: -10px">< 1 <label style="color: #E83F11;font-size: small">mbps</label></div>';
+                case 0:
+                    is_canvas = false;
+                    return '<label style="color: #E83F11;text-align: center">No Samples</label>';
+            }
+        }
+
         $('#store').click(function (event) {
+            selected_phd_sbp = true;
             isStore = true;
             firstname = $('#order_fname').val();
             lastname = $('#order_lname').val();
             pincode = $("#order_pin").val();
-            // $('#order_pin').val(this.value+String.fromCharCode(charCode));
             var url = "https://darpn.in/v1.0/jiostore/pincode/"+$("#order_pin").val();
-            // alert(url);
             $.ajax({
                 url: url,
                 type: "GET",
@@ -789,6 +1029,7 @@
                 cache: true,
                 success: function(html){
                     console.log(html);
+
                     if(html['success'] == "1"){
                         $('#order_addr_div').show();
                         $('#order_addr').val(html['address'][0]['storeaddress']);
@@ -800,7 +1041,6 @@
                         $('#book-a-slot').attr('disabled', 'disabled');
                         customfield = "SBP";
                         var obj = { "callName":"getslots", "areaId": areaId, "dateTime": date.getTime()};
-                        // alert("here");
                         $.ajax
                         ({
                             type:"POST",
@@ -809,21 +1049,19 @@
                             },
                             data: JSON.stringify(obj),
                             url: "https://darpn.in/gettimeslots",
-                            success: function(result)
-                            {
-                                // alert(date.getTime());
-                                // console.log(result);
-                                // console.log("getslotsmethod");
-                                // console.log(result);
+                            success: function(result) {
+                                result =  JSON.parse(result);
+                                console.log("getslotsmethod - storepickup");
+                                console.log(result);
                                 RefreshCalendar();
-                                CreateCalendarAsPerResult(JSON.parse(result));
+                                CreateCalendarAsPerResult(result);
                                 $('#book-a-slot').removeAttr('disabled');
                             }
                         });
                     }
                     if((html)['success'] == "0"){
                         $('#order_addr_div').show();
-                        $('#order_addr').val(html['status']);
+                        $('#order_addr').val('Sorry we do not service this pincode');
                         $('#order_addr').attr('readonly','readonly');
                         $('#book-a-slot').hide();
                     }
@@ -832,108 +1070,167 @@
         });
 
         $('#home').click(function (event) {
+            selected_phd_sbp = true;
             isStore = false;
-            $('#book-a-slot').show();
-            $('#book-a-slot').attr('disabled', 'disabled');
-            $('#order_addr_div').show();
-            $('#order_addr').val("");
-            $('#order_addr').removeAttr('readonly');
-            $('#order_addr').attr('placeholder', 'Enter Delivery Address');
             customfield = "PHD";
-
-            var obj = { "callName":"getslots", "areaId": ""+areaId+"", "dateTime": date.getTime()};
-            $.ajax
-            ({
-                type:"POST",
-                beforeSend: function(request) {
-                    request.setRequestHeader("Content-Type", "application/json");
-                },
-                data: JSON.stringify(obj),
-                url: "https://darpn.in/gettimeslots",
-                success: function(result)
-                {
-                    // alert(date.getTime());
-                    // console.log("getslotsmethod");
-                    // console.log(result);
-                    RefreshCalendar();
-                    CreateCalendarAsPerResult(JSON.parse(result));
-                    $('#book-a-slot').removeAttr('disabled');
-                }
-            });
-        });
-
-        $('#book-a-slot').click(function (event) {
-            // $('#exampleModal').modal('show');
-            $('.form-pane').hide();
-            $('.calendar-pane').show();
-            // $('#booknow').attr('disabled','disabled');
-            $('#booknow').hide();
-            homeaddr = $('#order_addr').val();
-            var level_200_obj = "";
-            if(isStore){
-                level_200_obj = {
-                    "customerid": "NA",
-                    "leadid": "null",
-                    "mobilenumber": mobilenumber,
-                    "timestamp": (new Date()).getTime(),
-                    "firstname": firstname,
-                    "lastname": lastname,
-                    "pincode": pincode ,
-                    "address": storeaddr,
-                    "deliverytype": "SBP",
-                    "timeSlot": "null",
-                    "longitude": wlong,
-                    "latitude": wlat,
-                    "upc": "NA",
-                    "level": 200,
-                    "id": passing_obj_id
-                }
-            }else{
-                level_200_obj = {
-                    "customerid": "NA",
-                    "leadid": "null",
-                    "mobilenumber": mobilenumber,
-                    "timestamp": (new Date()).getTime(),
-                    "firstname": firstname,
-                    "lastname": lastname,
-                    "pincode": pincode ,
-                    "address": homeaddr,
-                    "deliverytype": "PHD",
-                    "timeSlot": "null",
-                    "longitude": wlong,
-                    "latitude": wlat,
-                    "upc": "NA",
-                    "level": 200,
-                    "id": passing_obj_id
-                }
-            }
+            var isphd = false;
+            var dlvrytyp = "";
+            firstname = $('#order_fname').val();
+            lastname = $('#order_lname').val();
+            pincode = $("#order_pin").val();
+            var url = "https://darpn.in/v1.0/jiostore/pincode/"+$("#order_pin").val();
             $.ajax({
-                url: "https://darpn.in/v1.0/updatejiolead/",
+                url: url,
                 type: "GET",
                 beforeSend: function (request) {
                     request.setRequestHeader("Authorization", "Basic dGlrdGlrOjEyMw==");
-                    request.setRequestHeader("data", JSON.stringify(level_200_obj));
                 },
-                success: function (data) {
-                    if(data['status']=="1"){
-                        // $('.buy-pane').hide();
-                        // $('.main-pane').hide();
-                        // $('.port-pane').hide();
-                        // $('.calendar-pane').hide();
-                        // $('.form-pane').show();
-                        alert(data['id']);
-                        console.log("200 success")
-                        console.log(data);
-                    }else{
-                        // $('.main-pane').hide();
-                        // $('.port-pane').hide();
-                        // $('.calendar-pane').hide();
-                        // $('.form-pane').hide();
-                        // $('.buy-pane').show();
-                        // $('#errormodal').modal('toggle');
+                cache: true,
+                success: function (html) {
+                    if (html['success'] == "1") {
+                        storeaddr = html['address'][0]['storeaddress'];
+                        cityId = html['address'][0]['cityid'];
+                        areaId = html['address'][0]['areaid'];
+                        dlvrytyp = html['address'][0]['deliverytype'];
+                        if(dlvrytyp == 'PHD'){
+                            $('#order_addr_div').show();
+                            $('#order_addr').val("");
+                            $('#order_addr').removeAttr('readonly');
+                            $('#book-a-slot').show();
+                            $('#book-a-slot').attr('disabled', 'disabled');
+                            $('#order_addr').attr('placeholder', 'Enter Delivery Address');
+                            var obj = { "callName":"getslots", "areaId": ""+areaId+"", "dateTime": date.getTime()};
+                            $.ajax
+                            ({
+                                type:"POST",
+                                beforeSend: function(request) {
+                                    request.setRequestHeader("Content-Type", "application/json");
+                                },
+                                data: JSON.stringify(obj),
+                                url: "https://darpn.in/gettimeslots",
+                                success: function(result)
+                                {
+                                    result = JSON.parse(result);
+                                    // alert(date.getTime());
+                                    console.log("getslotsmethod - home delivery");
+                                    console.log(result);
+                                    if(result['success'] == '1'){
+                                        RefreshCalendar();
+                                        CreateCalendarAsPerResult(result);
+                                        $('#book-a-slot').removeAttr('disabled');
+                                    }else{
+                                        $('#order_addr_div').show();
+                                        $('#order_addr').val('Sorry we do not service this pincode');
+                                        $('#order_addr').attr('readonly','readonly');
+                                        $('#book-a-slot').hide();
+                                    }
+                                }
+                            });
+                        }else{
+                            $('#order_addr_div').show();
+                            $('#order_addr').val('Sorry we do not service this pincode for Home Delivery. Try store pickup');
+                            $('#order_addr').attr('readonly','readonly');
+                            $('#book-a-slot').hide();
+                        }
+
                     }
-                },
+                    if((html)['success'] == "0"){
+                        $('#order_addr_div').show();
+                        $('#order_addr').val('Sorry we do not service this pincode');
+                        $('#order_addr').attr('readonly','readonly');
+                        $('#book-a-slot').hide();
+                    }
+                }
             });
+
+
+        });
+
+        $('#order_addr').focus(function () {
+            $('#order_addr').css('background-image','none');
+        });
+
+        $('#book-a-slot').click(function (event) {
+            if($('#order_addr').val().length > 10 ){
+                $('#order_addr').css('background-image','none');
+                // $('#exampleModal').modal('show');
+                $('.form-pane').hide();
+                $('.calendar-pane').show();
+                // $('#booknow').attr('disabled','disabled');
+                $('#booknow').hide();
+                homeaddr = $('#order_addr').val();
+                var level_200_obj = "";
+                if(isStore){
+                    level_200_obj = {
+                        "customerid": "NA",
+                        "leadid": "null",
+                        "mobilenumber": mobilenumber,
+                        "timestamp": (new Date()).getTime(),
+                        "firstname": firstname,
+                        "lastname": lastname,
+                        "pincode": pincode ,
+                        "address": storeaddr,
+                        "deliverytype": "SBP",
+                        "timeSlot": "null",
+                        "longitude": wlong,
+                        "latitude": wlat,
+                        "upc": "NA",
+                        "level": 200,
+                        "id": passing_obj_id
+                    }
+                }else{
+                    level_200_obj = {
+                        "customerid": "NA",
+                        "leadid": "null",
+                        "mobilenumber": mobilenumber,
+                        "timestamp": (new Date()).getTime(),
+                        "firstname": firstname,
+                        "lastname": lastname,
+                        "pincode": pincode ,
+                        "address": homeaddr,
+                        "deliverytype": "PHD",
+                        "timeSlot": "null",
+                        "longitude": wlong,
+                        "latitude": wlat,
+                        "upc": "NA",
+                        "level": 200,
+                        "id": passing_obj_id
+                    }
+                }
+                $.ajax({
+                    url: "https://darpn.in/v1.0/updatejiolead/",
+                    type: "GET",
+                    beforeSend: function (request) {
+                        request.setRequestHeader("Authorization", "Basic dGlrdGlrOjEyMw==");
+                        request.setRequestHeader("data", JSON.stringify(level_200_obj));
+                    },
+                    success: function (data) {
+                        if(data['status']=="1"){
+                            // $('.buy-pane').hide();
+                            // $('.main-pane').hide();
+                            // $('.port-pane').hide();
+                            // $('.calendar-pane').hide();
+                            // $('.form-pane').show();
+                            alert(data['id']);
+                            console.log("200 success")
+                            console.log(data);
+                        }else{
+                            // $('.main-pane').hide();
+                            // $('.port-pane').hide();
+                            // $('.calendar-pane').hide();
+                            // $('.form-pane').hide();
+                            // $('.buy-pane').show();
+                            // $('#errormodal').modal('toggle');
+                        }
+                    },
+                });
+            }else {
+                $('#order_addr').css('background-image','url(imgs/error.png)');
+                $('#order_addr').css('background-position','7px 7px');
+                $('#order_addr').css('background-repeat','no-repeat');
+                $('#order_addr').css('background-size','15px 15px');
+            }
+
         });
 
         function CreateCalendarAsPerResult(resultjson) {
@@ -976,10 +1273,10 @@
             var classname = $(this).attr('class').split(" ")[0]
             var slotdate = classname.split("T")[0].split("-")[2]+"/"+classname.split("T")[0].split("-")[1]
             timeSlot = $(this).attr('class').split(" ")[0].split("T")[1]+":00 "+slotdate;
-            $('.ava-slot').css('background','#00FF00');
-            $('.ava-slot').css('color','#00FF00');
-            $(this).css('background','#3369E8');
-            $(this).css('color','#3369E8');
+            $('.ava-slot').css('background','#D3D3D3');
+            $('.ava-slot').css('color','#D3D3D3');
+            $(this).css('background','#009688');
+            $(this).css('color','#009688');
         });
 
         $('#booknow').click(function (event) {
@@ -1006,8 +1303,6 @@
                     $('.form-pane').hide();
                     $('.port-pane').hide();
                     $('.calendar-pane').hide();
-                    $('.confirm-pane').show();
-                    $('#lead-h1').val("lead id - "+ result['leadId']);
                     if(result['success'] == "1"){
                         if(isStore){
                             level_400_obj = {
@@ -1075,6 +1370,15 @@
                                 console.log(data);
                             },
                         });
+                        $('.confirm-pane').show();
+                        if(customfield == "SBP"){
+                            $('#delivery_type_label_conformation').text("Store Pickup");
+                        }else if(customfield == "PHD"){
+                            $('#delivery_type_label_conformation').text("Doorstep Delivery");
+                        }
+                        $('#delivery_store_addr').text(storeaddr);
+                        $('#delivery_date_conformation').text(result['RequestDate']);
+                        $('#delivery_time_conformation').text(result['FromTime']+" - "+result['ToTime']);
                     }else if(result['success'] == "0"){
 
                         if(isStore){
