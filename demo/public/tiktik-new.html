@@ -1024,6 +1024,7 @@
                 type: "GET",
                 beforeSend: function(request) {
                     request.setRequestHeader("Authorization", "Basic dGlrdGlrOjEyMw==");
+                    request.setRequestHeader("data", "dummy");
                     // alert("sending now");
                 },
                 cache: true,
@@ -1084,6 +1085,7 @@
                 type: "GET",
                 beforeSend: function (request) {
                     request.setRequestHeader("Authorization", "Basic dGlrdGlrOjEyMw==");
+                    request.setRequestHeader("data", "dummy");
                 },
                 cache: true,
                 success: function (html) {
